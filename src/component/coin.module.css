@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid orangered;
+    padding: 10px;
+    align-items: center;
+}
+.container img {
+    width:  40px;
+    margin-right: 10px;
+}
+.container span{
+    width: 150px;
+}
+.names{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.green {
+    color: green;
+}
+.red{
+    color: red;
+}
