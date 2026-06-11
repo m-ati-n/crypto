@@ -10,7 +10,7 @@ function Coin({ name, image, symbol, price, marketCap, priceChange }) {
                 <div>{name} {symbol}</div>
             </div>
             <span>$ {price}</span>
-            <span className={priceChange > 0 ? styles.green : styles.red}>% {priceChange.toFixed(2)}</span>
+            <span className={priceChange > 0 ? styles.green : styles.red}>% {priceChange?.toFixed(2)}</span>
             <span>$ {marketCap}</span>
         </div>
     )
