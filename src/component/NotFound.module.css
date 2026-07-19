@@ -1,0 +1,45 @@
+.container{
+
+    min-height:80vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.container h1{
+
+    font-size:90px;
+
+    color:#f7931a;
+
+}
+
+.container a{
+
+    text-decoration:none;
+
+    background:#f7931a;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    transition:.2s;
+
+}
+
+.container a:hover{
+
+    transform:translateY(-2px);
+
+}

@@ -1,25 +1,184 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    border-top: 2px solid orangered;
-    padding: 10px;
-    align-items: center;
+.container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+    transition:all .25s ease;
+
+    cursor:pointer;
+
+    position:relative;
+
 }
-.container img {
-    width:  40px;
-    margin-right: 10px;
+
+.container:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    background:white;
+
 }
-.container span{
-    width: 150px;
+
+.container::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#f7931a;
+
+    opacity:0;
+
+    transition:.25s;
+
 }
+
+.container:hover::before{
+
+    opacity:1;
+
+}
+
+.container:not(:last-child){
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.container img{
+
+    width:42px;
+
+    height:42px;
+
+    margin-right:15px;
+
+    transition:.25s;
+}
+
+.container:hover img{
+
+    transform:scale(1.12);
+
+}
+
 .names{
-    width: 300px;
-    display: flex;
-    align-items: center;
+
+    width:320px;
+
+    display:flex;
+
+    align-items:center;
+
 }
-.green {
-    color: green;
+
+.coinInfo{
+
+    display:flex;
+
+    flex-direction:column;
+
 }
+
+.coinName{
+
+    font-weight:600;
+
+    color:#222;
+
+    transition:.25s;
+
+}
+
+.container:hover .coinName{
+
+    color:#f7931a;
+
+}
+
+.symbol{
+
+    color:#888;
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+.container span{
+
+    width:150px;
+
+}
+
+.green{
+
+    color:#16c784;
+
+    font-weight:bold;
+
+}
+
 .red{
-    color: red;
+
+    color:#ea3943;
+
+    font-weight:bold;
+
+}
+@media (max-width:768px){
+
+    .container{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+        border-radius:15px;
+
+        margin-bottom:15px;
+
+        background:white;
+
+        box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    }
+
+    .container span{
+
+        width:auto;
+
+    }
+
+    .names{
+
+        width:100%;
+
+    }
+
 }
