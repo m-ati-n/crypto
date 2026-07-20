@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "https://localhost:7093/api/coins";
+// const BASE_URL = "https://localhost:7093/api/coins";
+const BASE_URL = "https://crypto-api-production-ae30.up.railway.app/api/coins";
 
 const getCoin = async (
     page = 1,
